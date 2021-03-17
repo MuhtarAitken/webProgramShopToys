@@ -1,0 +1,163 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:background-size="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--    <title>Магазин игрушек</title>-->
+<!--    <meta charset="utf-8">-->
+
+<!--    <link href="style.css" rel="stylesheet" />-->
+<!--    <link href="styles.css" rel="stylesheet" />-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<!--    <script type="text/javascript" src="app.js"></script>-->
+
+<!--</head>-->
+<!--<body >-->
+<!--<div class="container">-->
+<!--  <div class="page-header">-->
+<!--        <nav>-->
+<!--            <ul class="top-menu">-->
+<!--                <li><a href="basket">Корзина <a1 id="cnt"></a1></a></li>-->
+<!--                <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></li>-->
+<!--                <li class="dropdown-standart"><a href="" class="dropdown">О нас</a>-->
+<!--                    <ul class="submenu-standart">-->
+<!--                        <li><a href="">Отзывы</a></li>-->
+<!--                        <li><a href="">Прайс-листы</a></li>-->
+<!--                        <li><a href="">Доставка и оплата</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="dropdown-standart"><a href="" class="dropdown">Контакты</a>-->
+<!--                    <ul class="submenu-standart">-->
+<!--                        <li>tel: 8777-777-77-77</li>-->
+<!--                        <li>adres:astana</li>-->
+<!--                    </ul>-->
+<!--                <li class="dropdown-standart"><a href="" class="dropdown">Товары и услуги</a>-->
+<!--                    <ul class="submenu-standart">-->
+<!--                        <li><a href="">Элемент списка</a></li>-->
+<!--                        <li><a href="">Элемент списка</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li><a href="">Главная</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+
+<!--    <div id="sidebar">-->
+<!--        <div style="text-align: left;">-->
+<!--        <h2  onclick="getList()" style=" text-align: center; color: #0f86f560">Список товаров</h2>-->
+<!--        <details>-->
+<!--            <summary >Игрушки для малышей (до 5 лет)</summary>-->
+<!--            <ul>-->
+<!--            <li><button type="button" onclick="getList_01()" >МУЗЫКАЛЬНЫЕ ИГРУШКИ</button></li>-->
+<!--            <li><button type="button" onclick="getList_02()">ИГРУШКИ С КОЛЕСАМИ</button></li>-->
+<!--            <li><button type="button" onclick="getList_03()">ПОГРЕМУШКИ </button></li>-->
+<!--            </ul>-->
+<!--        </details>-->
+<!--        <br>-->
+<!--        <details>-->
+<!--            <summary>Конструкторы lego</summary>-->
+
+<!--            <li><button type="button" onclick="del()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+
+<!--        </details>-->
+<!--        <br>-->
+<!--        <details>-->
+<!--            <summary>Мягкие игрушки</summary>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--        </details>-->
+<!--        <br>-->
+<!--        <details>-->
+<!--            <summary>Развивающие игрушки</summary>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--        </details>-->
+<!--        <br>-->
+<!--        <details>-->
+<!--            <summary>Игрушки машинки и транспорт</summary>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--            <li><button type="button" onclick="loadDoc()">Изменить контент</button></li>-->
+<!--        </details>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--    <div id="main">-->
+<!--       <table  id="table2" >-->
+<!--            <caption><b>Интернет-магазин детских игрушек</b></caption>-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th>id</th>-->
+<!--                <th>Наименование</th>-->
+<!--                <th>компания</th>-->
+<!--                <th>ЦЕНА</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody>-->
+<!--            </tbody>-->
+<!--        </table>-->
+<!--        <div id="demo">-->
+
+<!--        </div>-->
+
+<!--    </div>-->
+
+
+
+
+
+<!--    <div class="modal fade" id="myModal" role="dialog">-->
+<!--        <div class="modal-dialog">-->
+
+<!--            &lt;!&ndash; Modal content&ndash;&gt;-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--                    <h4 class="modal-title">Личный кабинет</h4>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <ul class="nav nav-tabs">-->
+<!--                        <li><a data-toggle="tab" href="#auth">Авторизация</a></li>-->
+<!--                        <li><a data-toggle="tab" href="#register">Регистрация</a></li>-->
+<!--                    </ul>-->
+
+<!--                    <div class="tab-content">-->
+<!--                        <div id="auth" class="tab-pane fade">-->
+<!--                            <form action="">-->
+<!--                                <div class="form-group">-->
+<!--                                    <label for="email">Email:</label>-->
+<!--                                    <input type="email" class="form-control" id="email">-->
+<!--                                </div>-->
+<!--                                <div class="form-group">-->
+<!--                                    <label for="pwd">Пароль:</label>-->
+<!--                                    <input type="password" class="form-control" id="pwd">-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <button type="submit" class="btn btn-default">Submit</button>&ndash;&gt;-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                        <div id="register" class="tab-pane fade">-->
+<!--                            <form action="">-->
+<!--                                <div class="form-group">-->
+<!--                                    <label for="email">Email:</label>-->
+<!--                                    <input type="email" class="form-control" id="emailregister">-->
+<!--                                </div>-->
+<!--                                <div class="form-group">-->
+<!--                                    <label for="pwd">Пароль:</label>-->
+<!--                                    <input type="password" class="form-control" id="pwdregister">-->
+<!--                                </div>-->
+<!--                                <button id="save" type="submit" class="btn btn-default" onclick="">Submit</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
